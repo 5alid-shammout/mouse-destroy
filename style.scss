@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    overflow: hidden;
+
+    button{
+        background: darken($color: aqua, $amount: 10);
+        border: none;
+        border-radius: 5px;
+        width: 25vw;
+        height: 15vh;
+        color: darken($color: aqua, $amount: 25);
+        font-size: 2vw;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: 'Staatliches', cursive;
+    }
+
+    .notes{
+        transition: 0.5s;
+        background: darken($color: aqua, $amount: 10);
+        width: 100vw;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        height: 2.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        transform: translateY(2.5vh);
+        a{
+            margin-right: 2.5vw;
+            font-family: 'Staatliches', cursive;
+            color: darken($color: aqua, $amount: 25);
+        }
+    }
+
+}

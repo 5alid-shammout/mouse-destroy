@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+* {
+  margin: 0;
+  font-family: 'Staatliches', cursive;
+}
+
+#notfound404 {
+  height: 100vh;
+  background: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#notfound404 h1 {
+  color: teal;
+  font-size: 10vw;
+  width: auto;
+  letter-spacing: 1.5px;
+}
+
+#realnotes {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 30vh;
+  margin-bottom: 20vh;
+}
+/*# sourceMappingURL=style2.css.map */
