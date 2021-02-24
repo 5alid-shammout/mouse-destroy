@@ -28,11 +28,12 @@ body{
     }
 
     img{
-        display: none;
         position: absolute;
         z-index: 1000;
-        top: 0;
-        left: 0;
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        left: 0px;
     }
 
     .notes{
