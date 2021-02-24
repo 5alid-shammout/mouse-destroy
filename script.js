@@ -26,7 +26,11 @@ btn.addEventListener("click", () => {
 
                 btn.innerText = "boooooooooom!";
                 imgdiv.innerHTML = '<img id="img" src="https://i.gifer.com/3IsK.gif"></img>';
+                
                 document.querySelector("body").style.cursor = "none";
+                btn.style.cursor = "none";
+                nts.style.transform = "translateY(2.5vh)"
+                
 
                 setTimeout( () => {
 
@@ -40,4 +44,4 @@ btn.addEventListener("click", () => {
 
     }, 1000);
 
-})
+});
