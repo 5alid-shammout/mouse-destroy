@@ -7,26 +7,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: aqua;
+  background-color: #266DD3;
   overflow: hidden;
+  position: relative;
 }
 
 body button {
-  background: #00cccc;
+  background: #1e57a8;
   border: none;
   border-radius: 5px;
   width: 25vw;
   height: 15vh;
-  color: teal;
+  color: #133567;
   font-size: 2vw;
   text-transform: uppercase;
   cursor: pointer;
@@ -42,7 +42,7 @@ body img {
 }
 
 body .notes {
-  background: #00e6e6;
+  background: #2262bd;
   width: 100vw;
   position: absolute;
   top: auto;
@@ -52,18 +52,18 @@ body .notes {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-transform: translateY(2.5vh);
-  transform: translateY(2.5vh);
+          transform: translateY(2.5vh);
 }
 
 body .notes a {
   margin-right: 2.5vw;
   font-family: "Staatliches", cursive;
-  color: teal;
+  color: #133567;
 }
 /*# sourceMappingURL=style.css.map */
