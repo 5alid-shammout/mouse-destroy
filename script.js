@@ -13,19 +13,19 @@ const el = document.querySelector("#img");
 
 body.addEventListener("mousemove", (e) => {
   el.style.left = e.pageX - 100 + "px";
-  el.style.top = e.pageY - 200 + "px";
+  el.style.top = e.pageY - 210 + "px";
 });
 
 // mouse destroying [evil laugh hahahahaha]
 btn.addEventListener("click", (e) => {
   document.documentElement.requestFullscreen();
-  btn.innerText = "You are clever wait 3s";
+  btn.innerText = "wait 3s";
 
   setTimeout(() => {
-    btn.innerText = "You are clever wait 2s";
+    btn.innerText = "wait 2s";
 
     setTimeout(() => {
-      btn.innerText = "You are clever wait 1s";
+      btn.innerText = "wait 1s";
 
       setTimeout(() => {
         btn.innerText = "boooooooooom!";
