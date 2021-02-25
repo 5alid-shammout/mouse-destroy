@@ -13,7 +13,7 @@ const el = document.querySelector("#img");
 
 body.addEventListener("mousemove", (e) => {
   el.style.left = e.pageX - 100 + "px";
-  el.style.top = e.pageY - 170 + "px";
+  el.style.top = e.pageY - 200 + "px";
 });
 
 // mouse destroying [evil laugh hahahahaha]
