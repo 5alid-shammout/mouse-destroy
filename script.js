@@ -29,7 +29,7 @@ btn.addEventListener("click", () => {
                 
                 document.querySelector("body").style.cursor = "none";
                 btn.style.cursor = "none";
-                nts.style.transform = "translateY(2.5vh)"
+                nts.style.transform = "translateY(2.5vh)";
                 
 
                 setTimeout( () => {
