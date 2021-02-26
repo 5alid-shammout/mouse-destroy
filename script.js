@@ -1,6 +1,5 @@
 let btn = document.querySelector("button");
 let nts = document.querySelector(".notes");
-let imgdiv = document.querySelector(".imgdiv");
 let boomimg = document.querySelector("img");
 
 // display notes when hovering the button
