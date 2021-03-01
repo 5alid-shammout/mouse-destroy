@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 * {
   margin: 0;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
 }
 
 #notfound404 {
   height: 100vh;
-  background: #266DD3;
+  background: #266dd3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

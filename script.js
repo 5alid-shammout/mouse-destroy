@@ -1,24 +1,15 @@
 let btn = document.querySelector("button");
 let nts = document.querySelector(".notes");
 let boomimg = document.querySelector("img");
-
-// display notes when hovering the button
-btn.addEventListener("mouseover", () => {
-  nts.style.transform = "translateY(0)";
-});
-
 const body = document.body;
 const el = document.querySelector("#img");
 
-body.addEventListener("mousemove", (e) => {
-  el.style.left = e.pageX - 100 + "px";
-  el.style.top = e.pageY - 205 + "px";
-});
 
 // mouse destroying [evil laugh hahahahaha]
-btn.addEventListener("click", (e) => {
+const onbtnclck = () => {
   document.documentElement.requestFullscreen();
   btn.innerText = "wait 3s";
+  btn.removeEventListener("click", onbtnclck);
 
   setTimeout(() => {
     btn.innerText = "wait 2s";
@@ -29,10 +20,13 @@ btn.addEventListener("click", (e) => {
       setTimeout(() => {
         btn.innerText = "boooooooooom!";
         el.style.opacity = 1;
-
         document.querySelector("body").style.cursor = "none";
         btn.style.cursor = "none";
         nts.style.transform = "translateY(2.5vh)";
+        body.removeEventListener("mousemove", (e) => {
+          el.style.left = e.pageX - 100 + "px";
+          el.style.top = e.pageY - 205 + "px";
+        });
 
         setTimeout(() => {
           el.style.opacity = 0;
@@ -40,4 +34,19 @@ btn.addEventListener("click", (e) => {
       }, 1000);
     }, 1000);
   }, 1000);
+};
+
+// event listeners
+
+btn.addEventListener("click", onbtnclck);
+
+body.addEventListener("mousemove", (e) => {
+  el.style.left = e.pageX - 100 + "px";
+  el.style.top = e.pageY - 205 + "px";
+});
+
+// display notes when hovering the button
+
+btn.addEventListener("mouseover", () => {
+  nts.style.transform = "translateY(0)";
 });

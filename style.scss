@@ -10,17 +10,17 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #266DD3;
+  background-color: #266dd3;
   overflow: hidden;
   position: relative;
 
   button {
-    background: darken($color: #266DD3, $amount: 10);
+    background: darken($color: #266dd3, $amount: 10);
     border: none;
     border-radius: 5px;
     width: 25vw;
     height: 15vh;
-    color: darken($color: #266DD3, $amount: 25);
+    color: darken($color: #266dd3, $amount: 25);
     font-size: 2vw;
     text-transform: uppercase;
     cursor: pointer;
@@ -36,7 +36,7 @@ body {
   }
 
   .notes {
-    background: darken($color: #266DD3, $amount: 5);
+    background: darken($color: #266dd3, $amount: 5);
     width: 100vw;
     position: absolute;
     top: auto;
@@ -49,7 +49,7 @@ body {
     a {
       margin-right: 2.5vw;
       font-family: "Staatliches", cursive;
-      color: darken($color: #266DD3, $amount: 25);
+      color: darken($color: #266dd3, $amount: 25);
     }
   }
 }
